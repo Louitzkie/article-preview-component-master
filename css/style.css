@@ -1,0 +1,156 @@
+:root {
+  --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+  --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+  --Grayish-Blue: hsl(212, 23%, 69%);
+  --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* reset */
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* utility */
+.split {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.split > * {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+@media (min-width: 40rem) {
+  .split {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.flow-content > * + * {
+  margin-top: 1rem;
+}
+
+body {
+  line-height: 1.5;
+  font-weight: 500;
+  color: var(--Grayish-Blue);
+  font-size: 0.8125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  background: var(--Light-Grayish-Blue);
+  font-family: "Manrope", sans-serif;
+  padding: 0 1rem;
+}
+
+.container {
+  max-width: 90rem;
+  margin-inline: auto;
+}
+
+.xl-space {
+  margin-top: 2rem;
+}
+
+.card {
+  background: #fff;
+  -webkit-box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+}
+
+.card .img {
+  background: url("../images/drawers.jpg");
+  min-height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.card .content {
+  padding: 2rem;
+}
+
+.card .content h2 {
+  font-size: 1.525rem;
+  font-weight: 700;
+  color: var(--Very-Dark-Grayish-Blue);
+}
+
+.card .content p {
+  font-size: 0.9rem;
+}
+
+.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile .avatar {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+}
+
+.profile .info h3 {
+  color: var(--Very-Dark-Grayish-Blue);
+}
+
+.profile .icon {
+  margin-left: auto;
+  background: var(--Light-Grayish-Blue);
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.attribution {
+  margin-top: 3rem;
+}
+
+.attribution a {
+  font-weight: 700;
+  color: var(--Very-Dark-Grayish-Blue);
+}
+/*# sourceMappingURL=style.css.map */
